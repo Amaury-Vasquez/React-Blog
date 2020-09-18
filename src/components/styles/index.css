@@ -16,9 +16,11 @@
   --main-font: "Quicksand", sans-serif;
   --special-font: "Grenze Gotisch", cursive;
   --radius: 0.5vw;
+  --min-radius: 0.2vw;
   --special-size: 1.6vw;
   --default-width: 80vw;
   --default-padding: 2vw;
+  --margin: 2vw;
 }
 
 body {
@@ -84,12 +86,12 @@ ul.list-menu {
 }
 
 ul.list-menu li {
-  margin-right: 2vw;
+  margin-right: var(--margin);
 }
 
 .link {
   text-decoration: none;
-  margin-left: 2vw;
+  margin-left: var(--margin);
 }
 
 .link li {
@@ -98,7 +100,7 @@ ul.list-menu li {
 }
 
 .link :hover {
-  color: gold;
+  color: red;
 }
 
 h3.header-title {
@@ -170,6 +172,7 @@ div.content {
   display: grid;
   justify-content: center;
   min-height: 80vh;
+  font-family: var(--main-font);
 }
 
 article.article {
@@ -204,7 +207,7 @@ article p {
 }
 
 img.home-article-img {
-  margin-left: 2vw;
+  margin-left: var(--margin);
   float: right;
 }
 
@@ -217,7 +220,7 @@ div.card-container {
   padding: var(--default-padding);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2vw;
+  grid-gap: var(--margin);
 }
 
 div.card {
@@ -238,7 +241,7 @@ img.card-img {
   max-width: 5vw;
   max-height: 5vw;
   float: left;
-  margin-right: 2vw;
+  margin-right: var(--margin);
   /* margin-bottom: 1vw; */
 }
 
@@ -292,7 +295,10 @@ button.card-button:hover {
   color: goldenrod;
 }
 
-h2.about,
+h2.tutorial {
+  text-align: center;
+  text-transform: capitalize;
+}
 p.quote {
   text-align: center;
 }
@@ -302,40 +308,96 @@ article img {
 }
 article img.me-img {
   width: 28vw;
-  margin-right: 2vw;
+  margin-right: var(--margin);
   float: left;
   height: auto;
 }
 
 article img.college-img {
   width: 35vw;
-  margin-left: 2vw;
+  margin-left: var(--margin);
   height: auto;
   float: right;
 }
 
 article img.book-img {
   width: 20vw;
-  margin-right: 2vw;
+  margin-right: var(--margin);
   height: auto;
   float: left;
 }
 
 article img.ritchie-img {
   width: 40vw;
-  margin-left: 2vw;
+  margin-left: var(--margin);
   height: auto;
   float: right;
 }
 
-/* article img.c-programming {
+div img.c-programming {
   width: 30vw;
-  /* margin-right: 5vw; */
-/* height: auto;
-  float: right; */
-/* } */
+  margin-right: 5vw;
+  height: auto;
+  float: right;
+}
 
 article p ol li {
   list-style: upper-roman;
   text-transform: capitalize;
+}
+
+div.center {
+  padding: var(--default-padding);
+  margin-top: 5vh;
+  width: var(--default-width);
+  max-width: var(--default-width);
+}
+
+button.btn {
+  font-family: var(--main-font);
+  font-size: var(--text-size);
+  outline: none;
+  border: none;
+  padding: 0.5vw;
+  width: 10vw;
+  height: 3vw;
+  cursor: pointer;
+}
+
+button.content-button {
+  display: block;
+  margin: 0 auto;
+  background-color: var(--blue);
+  color: var(--white-text);
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+button.content-button:hover {
+  color: var(--red);
+}
+div.content-list {
+  padding: 1vw;
+  /* margin-top: var(--margin); */
+  display: grid;
+  width: var(--default-width);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  background-color: var(--blue);
+  color: var(--white-text);
+  border-radius: var(--radius);
+}
+
+.active {
+  display: none;
+}
+
+li.list-item {
+  font-size: var(--text-size);
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+li.list-item:hover {
+  color: var(--red);
 }

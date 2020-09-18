@@ -1,7 +1,4 @@
 import React, { Component } from "react";
-
-// import Me from "";
-
 export default class About extends Component {
   render() {
     return (
@@ -31,7 +28,7 @@ export default class About extends Component {
           <p>
             My dream is to help people to live better and easier lifes, i try to
             use technology in order to achieve it. <br /> <br />
-            Studying Computer Science and Engineering at UTM. <br />
+            Studying Computer Systems Engineering at IPN. <br />
             Active student at{" "}
             <a
               href="https://platzi.com/"
@@ -49,8 +46,7 @@ export default class About extends Component {
           <h3 className="subtitle"> Skills </h3>
           <img
             className="college-img"
-            // src="https://guiauniversitaria.mx/wp-content/uploads/2019/12/ipn_unidad-especializada-en-energi%CC%81a.jpg"
-            src="https://www.diariomarca.com.mx/wp-content/uploads/2020/02/p.-2-27.jpg"
+            src="https://guiauniversitaria.mx/wp-content/uploads/2019/12/ipn_unidad-especializada-en-energi%CC%81a.jpg"
             alt="Amaury"
           />
           <p>
