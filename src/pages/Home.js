@@ -16,37 +16,39 @@ export default class Home extends Component {
             src="https://media.istockphoto.com/vectors/programming-banner-coding-best-programming-languages-flat-concept-vector-id1185648198?k=6&m=1185648198&s=170667a&w=0&h=BYK8cS3bxH4hy3NpO3hFg2Ha6y4KQ2PTY2c-ePAqDPY="
             alt="coding banner"
           ></img>
-          <h2 className="title">Welcome to my blog!</h2>
-          <h3 className="subtitle">Learn about programming for free</h3>
+          <h2 className="title">¡Bienvenido a mi blog!</h2>
+          <h3 className="subtitle">Aprende gratis a programar</h3>
           <p>
-            Nowadays creating content is one way to share who we are to the
-            world. <br /> The way i see things, coding gives you the ability to
-            create content, making possible to pass beyond the barrier of the
-            consummer.
-            <br /> You cand find below the current tutorials we have about
-            programming languages, there are more to come, be sure to keep
-            updated!
+            Hoy en día <strong>crear contenido</strong> es una herramienta muy
+            útil para mostrar quien somos al mundo <br />A mi forma de ver las
+            cosas, programar se ha convertido en una habilidad muy importante en
+            el mundo moderno, además, te da la capacidad de crear contenido,
+            haciendo posible <strong>dejar de ser solo un consumidor.</strong>{" "}
+            <br />
+            Abajo se encuentran los tutoriales con los que contamos actualmente,
+            mantente actualizado, van a venir más.
           </p>
         </article>
         <div className="card-container">
           <Card
             logo={CLogo}
-            name="C/C++"
-            description="C and C++ are two of the most important languages
-            in the world, most operating systems are build using them."
+            name="c/c++"
+            description="C y C++ son dos de los lenguajes más importantes en
+            el mundo, muchos sistemas operativos son construidos en
+            base a ellos."
             path="/tutorials/c"
           />
           <Card
             logo={JavaLogo}
             name="java"
-            description="Java is an Object Orientated Programming Language, it is commonly 
-            used for developing web and android applications"
+            description="JAVA es un lenguaje orientado a objetos, es usado para 
+            aplicaciones android, aplicaciones de escritorio, entre otros."
           />
           <Card
             logo={JsLogo}
             name="Javascript"
-            description="Javascript is indeed the most important programming language
-            for web, it can be used for backend and frontend."
+            description="Javascript es sin duda el lenguaje mas importante en la web, puede
+            ser usando en frontend y backend."
           />
         </div>
       </div>

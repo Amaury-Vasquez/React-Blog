@@ -2,34 +2,40 @@ import React, { Component } from "react";
 
 import AboutC from "../components/tutorials/C/AboutC";
 import Introduction from "../components/tutorials/C/Introduction";
+import Operators from "../components/tutorials/C/Operators";
+import InputOutput from "../components/tutorials/C/InputOutput";
 import Content from "../components/Content";
-
 class CTutorial extends Component {
   constructor() {
     super();
-    const articles = [<AboutC />, <Introduction />];
+    const articles = [
+      <AboutC />,
+      <Introduction />,
+      <Operators />,
+      <InputOutput />,
+    ];
     this.state = {
       activeComponent: null,
       articles,
-      current: articles[0],
+      current: articles[3],
     };
   }
   render() {
     const contents = [
-      "About C",
-      "Introduction to C programming",
-      "Structured Program Development",
-      "C Program Control",
-      "C Functions",
-      "c arrays",
-      "c pointers",
-      "c characters and strings",
-      "c formatted input and output",
-      "c structures, unions, bit manipulations and enumerations",
-      "c file processing",
-      "c data structures",
-      "c preprocessor",
-      "other c topics",
+      "Acerca de C",
+      "Introducción a la programación en C",
+      "Operadores y Variables",
+      "Formato de entrada y salida",
+      "Control de programas",
+      "Funciones",
+      "Arreglos",
+      "Apuntadores",
+      "Carácteres y cadenas",
+      "Estructuras, uniones, manipulación de bits y enumeraciones",
+      "Procesamiento de archivos",
+      "Estructuras de datos",
+      "Preprocesador",
+      "Otros temas",
     ];
     return (
       <div className="content">

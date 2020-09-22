@@ -5,51 +5,60 @@ function AboutC() {
   return (
     <article className="article">
       <p className="quote">
-        “Any fool can write code that a computer can understand. Good
-        programmers write code that humans can understand.” – Martin Fowler
+        “Cualquier persona puede escribir código que una computadora pueda
+        entender, un buen programador escribe código que los{" "}
+        <strong>humanos puedan entender</strong>.” – Martin Fowler
       </p>
       <br />
-      <h2 className="title tutorial"> About this tutorial </h2>
+      <h2 className="title tutorial"> Acerca del tutorial </h2>
       <img
         className="book-img"
         src="https://images-na.ssl-images-amazon.com/images/I/91goMjzrVUL.jpg"
         alt="Deitel && Deitel"
       ></img>
       <p>
-        All content will be based mainly in this book: "Deitel, P., & Deitel, H.
-        (2012). C: How to Program, 7th Edition (7th ed.). Prentice Hall." We
-        highly recommend to read it in order to understand better how C language
-        works. <br />
-        Back in the day when i was learning to program, i often needed a hand to
-        get to know what i did not knew, i tried to include all features of C
-        that im aware of so you do not have to struggle the way i did. <br />
-        Hope you enjoy the content, and, above all things, have fun learning how
-        to code!
+        Todo el contenido será basado principalmente en el siguiente libro:
+        "Deitel, P., & Deitel, H. (2012). C: How to Program, 7th Edition (7th
+        ed.). Prentice Hall." Recomiendo leerlo para poder entender de una mejor
+        manera como funciona C. <br />
+        Cuando estaba aprendiendo a programar, a menudo necesitaba ayuda para
+        saber sobre que temas desconocía, teniendo en cuenta esto, intenté
+        incluir todas las características del lenguaje sobre las que estoy
+        conciente. <br />
+        Espero que disfrutes del contenido y, sobre todas las cosas,
+        <strong>disfrutes aprendiendo a programar</strong> .
       </p>
       <br />
-      <h2 className="title about"> About C Programming Language </h2> <br />
-      <h3 className="subtitle"> History </h3>
+      <h2 className="title about">
+        {" "}
+        Acerca del lenguaje de programación C{" "}
+      </h2>{" "}
+      <br />
+      <h3 className="subtitle"> Historia </h3>
       <img
         className="ritchie-img"
         src="https://hipertextual.com/archivo/wp-content/uploads/2014/05/que-es-unix.jpg"
         alt="Dennis Ritchie"
       />
       <p>
-        C evolved from two previous languages (BCPL and B.BCPL), it was created
-        in 1972 by Dennis Ritchie at bell laboratories of AT&T. C initially
-        became widely known as the development language of the UNIX operating
-        system. Many of today’s leading operating systems are written in C
-        and/or C++. <br />
-        It is a language built for performance, is commonly used to build
-        operating systems, real time systems, embedded systems and communication
-        systems. <br />
-        Due to the rapid extension of C over various types of computers, there
-        were many variations similar but incompatible, this became a problem for
-        developers that needed to develop code capable of running in several
-        platforms. <br />
-        This led to C standarization in 1989 approved as ANSIX3.159-1989 in the
-        US through the
-        <strong> American National Standards Institute (ANSI).</strong>
+        C evolucionó de dos lenguajes previos (BCPL and B.BCPL), fue creado en
+        1972 por <strong>Dennis Ritchie</strong> en los Laboratorios Bell de
+        AT&T. Inicialmente, C fue conocido globalmente como el lenguaje de
+        desarrollo del sistema operativo <strong>UNIX</strong> . La mayoría de
+        los sistemas operativos más populares están escritos ya sea en C o C++.
+        <br />
+        Es un lenguaje creado para generar un buen <strong>rendimiento</strong>,
+        es comunmente usado para sistemas operativos, sistemas embebidos,
+        sistemas de tiempo real y sistemas de comunicación. <br />
+        Gracias a la rápida extensión de C en diferentes tipos de computadoras,
+        existieron diferentes versiones del lenguaje que eran similares, pero
+        incompatibles en los diferentes sistemas, esto se volvió un problema
+        para los desarrolladores que necesitaban crear software capaz de
+        ejecutarse en diferentes plataformas. <br />
+        Esto llevo a la <strong>estandarización del lenguaje</strong> en 1989
+        aprobada por en los Estados Unidos a través de el{" "}
+        <strong>Instituto Nacional Estadounidense de Estándares</strong> (más
+        conocido como ANSI por sus siglas en inglés).
       </p>
     </article>
   );

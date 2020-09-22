@@ -20,7 +20,7 @@ function Content({ list, callback }) {
   return (
     <div className="center">
       <button className="btn content-button" onClick={hideShow}>
-        contents
+        contenido
       </button>
       <div className={display}>{contentList}</div>
     </div>

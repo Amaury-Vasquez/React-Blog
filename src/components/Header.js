@@ -15,15 +15,15 @@ class Header extends React.Component {
           </span>
           <ul className="list-menu">
             <Link to="/" className="link">
-              <li> Home </li>
+              <li> Inicio </li>
             </Link>
             <Link to="/about" className="link">
-              <li> About </li>
+              <li> Acerca De </li>
             </Link>
           </ul>
         </div>
         <div className="right">
-          <h3 className="header-title"> Learning to code </h3>
+          <h3 className="header-title"> Programando </h3>
         </div>
       </header>
     );

@@ -1,11 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap");
 
 :root {
   --content-margin: 5vw;
   --white-text: whitesmoke;
+  --white-background: #e5e5e5;
   --red: #ea5455;
   --blue: #2d4059;
+  --crema: #decdc3;
   --title-size: 2vw;
   --subtitle-size: 1.5vw;
   --title-line-height: 5vh;
@@ -14,7 +16,7 @@
   --text-line-height: 5vh;
   --text-spacing: 0.2vw;
   --main-font: "Quicksand", sans-serif;
-  --special-font: "Grenze Gotisch", cursive;
+  --special-font: "Oswald", sans-serif;
   --radius: 0.5vw;
   --min-radius: 0.2vw;
   --special-size: 1.6vw;
@@ -177,10 +179,10 @@ div.content {
 
 article.article {
   padding: var(--default-padding);
-  margin-top: 5vh;
+  margin-top: 3vh;
   width: var(--default-width);
   max-width: var(--default-width);
-  box-shadow: 0.5vw 0.5vw var(--red);
+  box-shadow: 0.3vw 0.3vw var(--red);
 }
 
 h2.title,
@@ -196,6 +198,7 @@ h2.title {
 
 h3.subtitle {
   font-size: var(--subtitle-size);
+  /* margin-bottom: var(--margin); */
 }
 
 article p {
@@ -216,7 +219,6 @@ div.card-container {
   width: var(--default-width);
   height: auto;
   font-family: var(--main-font);
-  /* background-color: rgba(0, 0, 0, 0.7); */
   padding: var(--default-padding);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -234,7 +236,6 @@ div.card {
   background-color: #e5e5e5;
   border-radius: var(--radius);
   box-shadow: 0.2vw 0.2vw var(--red);
-  /* border: 1px solid; */
 }
 
 img.card-img {
@@ -242,7 +243,6 @@ img.card-img {
   max-height: 5vw;
   float: left;
   margin-right: var(--margin);
-  /* margin-bottom: 1vw; */
 }
 
 article.card-text {
@@ -292,7 +292,7 @@ button.card-button {
 button.card-button:hover {
   cursor: pointer;
   opacity: 0.8;
-  color: goldenrod;
+  color: var(--red);
 }
 
 h2.tutorial {
@@ -348,7 +348,7 @@ article p ol li {
 
 div.center {
   padding: var(--default-padding);
-  margin-top: 5vh;
+  margin-top: 2vh;
   width: var(--default-width);
   max-width: var(--default-width);
 }
@@ -400,4 +400,80 @@ li.list-item {
 
 li.list-item:hover {
   color: var(--red);
+}
+
+article img.code {
+  width: 30vw;
+  margin-top: var(--margin);
+  margin-right: var(--margin);
+}
+
+article img.terminal {
+  width: 45vw;
+  height: auto;
+}
+
+article img.full-width {
+  width: 100%;
+}
+
+p.instructions {
+  font-style: italic;
+  margin-bottom: var(--margin);
+}
+
+img.img-left {
+  float: left;
+  margin-right: var(--margin);
+}
+
+img.img-right {
+  float: right;
+  margin-left: var(--margin);
+}
+
+img.half {
+  width: 45%;
+}
+table.table {
+  width: 100%;
+  text-align: center;
+  padding: 0.2vw;
+}
+
+table tr.field {
+  font-size: 1.2vw;
+  width: 100%;
+  height: 8vh;
+}
+
+table tr.table-attribute {
+  background-color: var(--crema);
+}
+
+table td.table-info {
+  background-color: var(--white-background);
+  height: 15vh;
+}
+
+table td.table-formatter {
+  text-transform: lowercase;
+}
+table td.row-header {
+  font-style: italic;
+  text-transform: lowercase;
+  font-weight: bold;
+}
+
+table td.description {
+  max-width: 10vw;
+}
+
+li.enum {
+  list-style: decimal;
+}
+
+table tr.small,
+table td.small {
+  height: 8vh;
 }

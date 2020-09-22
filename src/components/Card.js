@@ -16,7 +16,7 @@ class Card extends React.Component {
         </article>
         <div className="button-container">
           <Link to={path} className="button-link">
-            <button className="card-button"> Start Learning!</button>
+            <button className="card-button"> ¡Llévame ahí! </button>
           </Link>
         </div>
       </div>
